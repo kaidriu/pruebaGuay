@@ -6,6 +6,7 @@ import { createConnection } from 'typeorm';
 import { typeOrmConfig } from './config/typeorm.config';
 import clienteRoutes from './routes/clienteRoutes';
 import departamentoRoutes from './routes/departamentoRoutes ';
+import authRoutes from './routes/authRoutes';
 
 dotenv.config(); // Configura dotenv para cargar las variables de entorno del archivo .env
 
@@ -18,6 +19,7 @@ app.use(express.json());
 // Rutas
 app.use('/api/clientes', clienteRoutes);
 app.use('/api/departamentos', departamentoRoutes);
+app.use('/api/auth', authRoutes);
 
 // Ruta de prueba
 app.get('/', (req: Request, res: Response) => {

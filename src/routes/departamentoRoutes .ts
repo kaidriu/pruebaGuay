@@ -11,7 +11,7 @@ import {
 const router = express.Router();
 
 // Obtener todos los departamentos
-router.get("/", auth, getAllDepartamentos);
+router.get("/", getAllDepartamentos);
 
 // Crear un nuevo departamento
 router.post("/", createDepartamento);

@@ -8,7 +8,7 @@ const auth_1 = require("../middleware/auth");
 const clienteController_1 = require("../controllers/clienteController");
 const router = express_1.default.Router();
 // Obtener todos los clientes
-router.get("/", auth_1.auth, clienteController_1.getAllClientes);
+router.get("/", clienteController_1.getAllClientes);
 // Crear un nuevo cliente
 router.post("/", clienteController_1.createCliente);
 // Obtener un cliente por ID

@@ -28,6 +28,10 @@ __decorate([
     __metadata("design:type", String)
 ], Cliente.prototype, "email", void 0);
 __decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], Cliente.prototype, "password", void 0);
+__decorate([
     (0, typeorm_1.ManyToOne)(() => Departamento_1.Departamento, (departamento) => departamento.clientes),
     __metadata("design:type", Departamento_1.Departamento)
 ], Cliente.prototype, "departamento", void 0);

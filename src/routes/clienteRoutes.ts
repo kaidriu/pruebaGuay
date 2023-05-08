@@ -11,18 +11,18 @@ import {
 const router = express.Router();
 
 // Obtener todos los clientes
-router.get("/", auth, getAllClientes);
+router.get("/", getAllClientes);
 
 // Crear un nuevo cliente
 router.post("/", createCliente);
 
 // Obtener un cliente por ID
-router.get("/:id", auth, getClienteById);
+router.get("/:id", getClienteById);
 
 // Actualizar un cliente por ID
-router.put("/:id", auth, updateCliente);
+router.put("/:id", updateCliente);
 
 // Eliminar un cliente por ID
-router.delete("/:id", auth, deleteCliente);
+router.delete("/:id", deleteCliente);
 
 export default router;

@@ -13,6 +13,9 @@ export class Cliente {
   @Column()
   email!: string;
 
+  @Column()
+  password!: string;
+
   @ManyToOne(() => Departamento, (departamento) => departamento.clientes)
   departamento!: Departamento;
 }
