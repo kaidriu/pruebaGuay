@@ -14,7 +14,7 @@ const router = express.Router();
 router.get("/", auth, getAllClientes);
 
 // Crear un nuevo cliente
-router.post("/", auth, createCliente);
+router.post("/", createCliente);
 
 // Obtener un cliente por ID
 router.get("/:id", auth, getClienteById);

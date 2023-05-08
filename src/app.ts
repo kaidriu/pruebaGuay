@@ -5,7 +5,7 @@ import express, { Request, Response } from 'express';
 import { createConnection } from 'typeorm';
 import { typeOrmConfig } from './config/typeorm.config';
 import clienteRoutes from './routes/clienteRoutes';
-import departamentoRoutes from './routes/departamentoRoutes';
+import departamentoRoutes from './routes/departamentoRoutes ';
 
 dotenv.config(); // Configura dotenv para cargar las variables de entorno del archivo .env
 
